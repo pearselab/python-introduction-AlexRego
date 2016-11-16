@@ -56,15 +56,20 @@ if __name__ == '__main__':
 # 10
 class point:
     def __init__(self, x, y, type='point'):
-        self.x, self.y, self.type=x,y,type
+        self.x = x
+        self.y = y
+        self.type = x,y,type
 
 
 # 11
 class point:
     def __init__(self, x1, y1, x2, y2):
-        self.x, self.y
+        self.x1 = x1
+        self.y1 = y1
+        self.x2 = x2
+        self.y1 = y2
 
-    def dist(x1,y1,x2,y2):
+    def dist(self):
         math.sqrt((x2-x1)**2 + (y2-y1)**2)
 
 # 12.
