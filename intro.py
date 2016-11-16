@@ -45,3 +45,27 @@ def gomp(a,b,c,t):
     return a*math.exp(-b*math.exp(-c*t))
 
 # 9.
+if __name__ == '__main__':
+    def bocks(width, height):
+        print('*'*width)
+        for i in range(height-2):
+            print('*' + ' '*height + '*')
+        print('*'*width)
+
+# 10
+class point:
+    def __init__(self, x, y, type='point'):
+        self.x, self.y, self.type=x,y,type
+
+
+# 11
+class point:
+    def __init__(self, x1, y1, x2, y2):
+        self.x = x, self.y = y
+    def dist(x1,y1,x2,y2):
+        math.sqrt((x2-x1)**2 + (y2-y1)**2)
+
+# 12.
+class line:
+    def __init__ (self, x1, y1, x2, y2, type='line'):
+        self.x1, self.y1, self.x2, self.y2, self.type = x1,y1,x2,y2,type
