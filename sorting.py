@@ -7,12 +7,14 @@ def bubblesort(nums):
     return nums
 
 ## Quick sort
-def quicksort(nums):
-    bottom = 0
-    top = len(nums)
+def quicksort(nums,bottom,top):
+    if bottom < top:
+        pivot = partition(nums, bottom,top)
+        quicksort(nums,bottom,pivot-1)
+        quicksort(nums,pivot+1, top)
 
 ## Partition
-def partition(list, bottom, top):
+def partition(nums, bottom, top):
     pivot = nums[top]
     x = bottom
     for i in range(bottom,top-1):
