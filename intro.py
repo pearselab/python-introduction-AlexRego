@@ -54,25 +54,21 @@ if __name__ == '__main__':
         print('*'*width)
 
 # 10
-class point:
-    def __init__(self, x, y, type='point'):
+class Point:
+    def __init__(self, x, y):
         self.x = x
         self.y = y
-        self.type = x,y,type
 
 
 # 11
-class point:
-    def __init__(self, x1, y1, x2, y2):
-        self.x1 = x1
-        self.y1 = y1
-        self.x2 = x2
-        self.y1 = y2
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
 
-    def dist(self):
-        math.sqrt((x2-x1)**2 + (y2-y1)**2)
+    def dist(self,x2,y2):
+        return math.sqrt((x2-self.x)**2 + (y2-self.y)**2)
 
 # 12.
-class line:
-    def __init__ (self, x1, y1, x2, y2, type='line'):
-        self.x1, self.y1, self.x2, self.y2, self.type = x1,y1,x2,y2,type
+class Line:
+    def __init__ (self, point1, point2):
