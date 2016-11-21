@@ -12,7 +12,11 @@ def quicksort(nums):
     top = len(nums)
 
 ## Partition
-def partition(list):
-    bottom = 0
-    top = len(nums)
+def partition(list, bottom, top):
     pivot = nums[top]
+    x = bottom
+    for i in range(bottom,top-1):
+        if nums[i] < pivot:
+            nums[i], nums[bottom] = nums[bottom], nums[i]
+            x += 1
+    return x
